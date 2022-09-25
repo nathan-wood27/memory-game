@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Memory Game!</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Memory Game!</h1>
+      <div id="game" class="start first-play">
+        <div id="it-is-a-match"><p>Match!</p></div>
+        <div id="you-win">
+          <h2>You Win!!</h2>
+          <button class="btn btn-secondary play-again">Play Again</button>
+        </div>
+      </div>
+      <form action="/" id="choose-number-of-matches">
+        <div class="input-wrapper">                    
+            <label for="number-of-matches-input" id="number-of-matches">Number Of Matching Tiles Desired</label>
+            <input type="number" id="number-of-matches-input" name="number-of-matches-input" min="1" required>
+        </div>
+        <button class="btn btn-primary" type="submit" id="start-game">Start Game</button>
+      </form>
+      <h2 id="best-score"></h2>
+      <h2>Your Current Score is <span id="current-score"></span></h2>
+    </div>    
+    <script src="script.js"></script>
+  </body>
+</html>
